@@ -42,12 +42,16 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.ViewHo
         binding.tvName.setText(list.get(position).getFull_name() != null ? list.get(position).getFull_name() : "");
         if (list.get(position).getUsertype().equals(Constants.ADMIN)) {
             binding.tvUserType.setText("Admin");
+            binding.ivDelete.setVisibility(View.GONE);
         } else if (list.get(position).getUsertype().equals(Constants.STUDENT)) {
             binding.tvUserType.setText("Student");
+            binding.ivDelete.setVisibility(View.VISIBLE);
         } else if (list.get(position).getUsertype().equals(Constants.PARENT)) {
             binding.tvUserType.setText("Parent");
+            binding.ivDelete.setVisibility(View.VISIBLE);
         } else if (list.get(position).getUsertype().equals(Constants.DRIVER)) {
             binding.tvUserType.setText("Driver");
+            binding.ivDelete.setVisibility(View.VISIBLE);
         }
         if (list.get(position).getUsertype().equals("3")) {
             binding.tvCourseDetails.setText(list.get(position).getCourse() + "-" + list.get(position).getBranch() + "(" + list.get(position).getSection() + ")");
