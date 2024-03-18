@@ -211,12 +211,21 @@ public class RouteFragment extends Fragment {
         if (documentData != null) {
             final String driver_name = (String) documentData.get("driver_name");
             final String bus_number = (String) documentData.get("bus_number");
-            final String source_lan = (String) documentData.get("source_lan");
+            /*final String source_lan = (String) documentData.get("source_lan");
             final String source_lat = (String) documentData.get("source_lat");
             final String destination_lan = (String) documentData.get("destination_lan");
             final String destination_lat = (String) documentData.get("destination_lat");
             final String last_lan = (String) documentData.get("last_lan");
-            final String last_lat = (String) documentData.get("last_lat");
+            final String last_lat = (String) documentData.get("last_lat");*/
+
+            source_lan = (String) documentData.get("source_lan");
+            source_lat = (String) documentData.get("source_lat");
+            destination_lan = (String) documentData.get("destination_lan");
+            destination_lat = (String) documentData.get("destination_lat");
+            last_lan = (String) documentData.get("last_lan");
+            last_lat = (String) documentData.get("last_lat");
+
+
             binding.tvDriverName.setText(driver_name);
             binding.tvBusNumber.setText(bus_number);
             binding.tvSourceAddress.setText(LocationHelper.getAddressFromLatLng(requireActivity(), Double.parseDouble(source_lat), Double.parseDouble(source_lan)));
@@ -225,6 +234,7 @@ public class RouteFragment extends Fragment {
 
         }
     }
+
 
 
     private void getBusList() {
