@@ -12,7 +12,7 @@
 
 
     <!-- Dashboard-->
-    <string name="user_management">user\n Management</string>
+    <string name="user_management">User\n Management</string>
     <string name="bus_management">Bus\n Management</string>
     <string name="bus_tracking">Bus\n Tracking</string>
     <string name="route_details">Route\n Details</string>
