@@ -109,7 +109,15 @@ public class ChangePasswordFragment extends Fragment {
         } else if (!newPassword.equals(confirmPassword)) {
             Tools.showToast(requireActivity(), "Confirm and New password should be same");
         } else {
-            checkPassword();
+            String regexPattern = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$";
+
+            if (newPassword.matches(regexPattern)) {
+                checkPassword();
+            } else {
+                // Password is not strong
+                Tools.showToast(requireActivity(), "Password is not strong");
+
+            }
         }
     }
 
