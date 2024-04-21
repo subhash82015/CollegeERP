@@ -275,6 +275,11 @@ public class DashboardActivity extends AppCompatActivity implements OnItemClickL
             intent.putExtra(Constants.SCREEN_NAME, Constants.ADMIN_FEES_SCREEEN);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
+        } else if (id == Constants.CHANGE_PASSWORD) {
+            Intent intent = new Intent(DashboardActivity.this, CommonActivity.class);
+            intent.putExtra(Constants.SCREEN_NAME, Constants.CHANGE_PASSWORD_SCREEN);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
         }
     }
 

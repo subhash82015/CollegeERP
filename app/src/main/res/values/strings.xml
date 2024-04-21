@@ -23,6 +23,8 @@
     <string name="analytics">Analytics</string>
     <string name="logout">Logout</string>
     <string name="add_fees">Add\n Fees</string>
+    <string name="change_password">Change\n Password</string>
+    <string name="change_password1">Change Password</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

@@ -45,6 +45,7 @@ public class Helper {
             menuArrayList.add(new MenuItems(Constants.FEES, context.getString(R.string.add_fees), R.drawable.baseline_view_list_24, true));
         }
 
+        menuArrayList.add(new MenuItems(Constants.CHANGE_PASSWORD, context.getString(R.string.change_password), R.drawable.ic_password, true));
         menuArrayList.add(new MenuItems(Constants.LOGOUT, context.getString(R.string.logout), R.drawable.baseline_logout_24, true));
 
 

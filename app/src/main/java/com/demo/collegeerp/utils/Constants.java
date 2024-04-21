@@ -20,6 +20,7 @@ public class Constants {
     public static int ANALYTICS = 8;
     public static int LOGOUT = 9;
     public static int FEES = 10;
+    public static int CHANGE_PASSWORD = 11;
 
     public static Long DEFAULT_USER_ID = Long.valueOf(0);
     public static int DEFAULT = 0;
@@ -32,6 +33,7 @@ public class Constants {
     public static String NOTIFICATION = "notification";
     public static String FEES_SCREEEN = "fees_screen";
     public static String ADMIN_FEES_SCREEEN = "admin_fees_screen";
+    public static String CHANGE_PASSWORD_SCREEN = "change_password_screen";
 
     public static String DOCUMENT_NAME = "7xnrQ9DZIlvVFc4xw9Dw";
 
