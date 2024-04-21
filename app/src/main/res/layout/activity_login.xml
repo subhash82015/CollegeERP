@@ -144,6 +144,7 @@
                                 android:hint="@string/password"
                                 android:inputType="textPassword"
                                 android:textColor="@color/black_light"
+                                android:layout_toLeftOf="@+id/show_pass_btn"
                                 android:textColorHint="@color/black_light111" />
 
                             <androidx.appcompat.widget.AppCompatImageView
@@ -153,6 +154,16 @@
                                 android:layout_alignParentLeft="true"
                                 android:src="@drawable/ic_password"
                                 android:tint="@color/black" />
+
+                            <ImageView
+                                android:id="@+id/show_pass_btn"
+                                android:layout_width="@dimen/_27sdp"
+                                android:layout_height="@dimen/_27sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:alpha=".5"
+                                android:src="@drawable/ic_remove_red_eye_black_24dp" />
 
 
                         </RelativeLayout>

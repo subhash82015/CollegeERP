@@ -5,6 +5,9 @@
         <item>Select Course</item>
         <item>B.Tech</item>
         <item>M.Tech</item>
+        <item>B.Pharma</item>
+        <item>M.Pharma</item>
+        <item>Diploma</item>
     </array>
 
     <array name="branch">
@@ -15,7 +18,7 @@
         <item>E&amp;TC</item>
     </array>
     <array name="section">
-        <item>Select Section</item>
+        <item>Select Division</item>
         <item>A</item>
         <item>B</item>
         <item>C</item>
